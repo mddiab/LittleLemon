@@ -20,7 +20,7 @@ from restaurant import views
 from rest_framework.routers import DefaultRouter #type: ignore
 
 router = DefaultRouter()
-router.register(r'tables', views.BookingViewSet),
+router.register(r'tables', views.BookingViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
